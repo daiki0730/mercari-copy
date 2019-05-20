@@ -13,10 +13,6 @@ CarrierWave.configure do |config|
     region: 'ap-northeast-1'
   }
 
-  config.fog_directory  = 'koba-space'
-  config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/koba-space'
-  else
-    config.storage :file
-    config.enable_processing = false if Rails.env.test?
-  end
+  config.fog_directory  = 'mercari-photo'
+  config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/mercari-photo'
 end
