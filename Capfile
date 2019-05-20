@@ -9,4 +9,4 @@ require 'capistrano3/unicorn'
 require "capistrano/scm/git"
 
 Dir.glob("lib/capistrano/tasks/*.rake").each { |r| import r }
-install_plugin Capistrano::GitCopy::SCM
+install_plugin Capistrano::SCM::Git
