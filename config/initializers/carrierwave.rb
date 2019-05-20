@@ -15,4 +15,5 @@ CarrierWave.configure do |config|
 
   config.fog_directory  = 'mercari-photo'
   config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/mercari-photo'
+  end
 end
